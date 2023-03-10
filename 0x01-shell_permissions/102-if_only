@@ -1,2 +1,2 @@
 #!/bin/bash
-if [ "$(stat -c %U hello)" = "guillaume" ] then echo "betty" | tee /tmp/newowner > /dev/null; xargs -I {} chown {} hello < /tmp/newowner fi 
+chown --from=guillaume betty hello
