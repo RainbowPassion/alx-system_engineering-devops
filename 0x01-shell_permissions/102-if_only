@@ -1,2 +1,2 @@
 #!/bin/bash
-chown --from=guillaume -R hello:betty  *
+find /hello -user guillaume chown betty hello
