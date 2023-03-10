@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo chown --from=guillaume:hello -Rc betty
+if [ "$(stat -c %U hello)" = "guillaume" ] then chown betty hello fi
