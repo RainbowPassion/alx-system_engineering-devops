@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $(head -${i} tr)
+cat -n file.txt | grep -E '^ *[0-9]+[02468]* '
